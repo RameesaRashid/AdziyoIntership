@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <style>
+      table.NextPage {
+        padding-top: 2%;
+        padding-left: 35%;
+        padding-right: 35%;
+        color: black;
+        tr {
+          background-color: rgb(245, 245, 245);
+        }
+      }
+
+      img.Sun {
+        padding-top: 4%;
+        padding-left: 2%;
+        padding-right: 1%;
+      }
+      img.Ship {
+        padding-top: 4%;
+      }
+
+      p.text {
+        padding-left: 7%;
+      }
+
+      table.table1 {
+        width: 60%;
+        color: black;
+
+        td,
+        th {
+          border: 1px;
+          text-align: center;
+          padding: 10px;
+        }
+        tr {
+          background-color: rgb(255, 255, 255);
+        }
+      }
+
+      table.table2 {
+        width: 60%;
+        color: black;
+
+        td,
+        th {
+          border: 1px;
+          text-align: left;
+          padding: 10px;
+        }
+        tr {
+          background-color: rgb(255, 255, 255);
+        }
+      }
+
+      hr {
+        border: none;
+        height: 5px;
+        background-color: rgb(210, 210, 210);
+        width: 100%;
+      }
+
+      hr.line {
+        border: none;
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+        width: 95%;
+      }
+      hr.newline {
+        border: none;
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+      }
+      aside.Portion {
+        float: left;
+        font-style: italic;
+        padding-bottom: 200%;
+      }
+      aside.PortionTwo {
+        padding-right: 15px;
+        padding-left: 2%;
+        margin-right: 15px;
+        float: right;
+        font-style: italic;
+        background-color: rgb(245, 245, 245);
+      }
+
+      section.images {
+        padding-left: 8%;
+        padding-bottom: 10%;
+        padding-top: 20%;
+      }
+
+      table.portfolio {
+        width: 100%;
+        color: black;
+
+        td,
+        th {
+          border: 1px;
+          text-align: left;
+          padding: 10px;
+        }
+        tr {
+          background-color: rgb(255, 255, 255);
+        }
+      }
+
+      table.About {
+        width: 100%;
+        color: black;
+
+        td,
+        th {
+          border: 1px;
+          text-align: left;
+          padding: 10px;
+        }
+        tr {
+          background-color: rgb(255, 255, 255);
+        }
+      }
+
+      table.Contact {
+        width: 100%;
+        color: black;
+
+        td,
+        th {
+          border: 1px;
+          text-align: left;
+          padding: 10px;
+        }
+        tr {
+          background-color: rgb(255, 255, 255);
+        }
+      }
+
+      table {
+        padding-left: 2%;
+        text-align: center;
+        color: white;
+        width: 95%;
+        padding-bottom: 2%;
+        td.Bar {
+          border: 1px;
+        }
+        td.Empty {
+          background-color: rgb(227, 226, 226);
+        }
+
+        tr {
+          background-color: rgb(83, 83, 83);
+        }
+      }
+
+      img.profile {
+        padding-bottom: 10%;
+        padding-top: 20%;
+      }
+
+      h2.AboutMe {
+        padding-left: 2.5%;
+      }
+      p.Para {
+        padding-left: 2%;
+        padding-bottom: 3%;
+      }
+      p.heading {
+        font-style: normal;
+        font-size: 20px;
+        padding-left: 2%;
+      }
+      p.photo {
+        font-size: 16px;
+        padding-left: 2%;
+      }
+
+      table.price {
+        color: rgb(62, 62, 62);
+        font-style: normal;
+        tr {
+          td {
+            padding: 20px;
+          }
+          background-color: rgb(255, 255, 255);
+        }
+      }
+
+      th.pro {
+        padding: 30px;
+        background-color: rgb(96, 196, 169);
+      }
+
+      th.premium {
+        padding: 30px;
+        background-color: rgb(192, 192, 192);
+      }
+
+      th.basic {
+        padding: 30px;
+        background-color: rgb(192, 192, 192);
+      }
+
+      p.charge {
+        padding-left: 2%;
+        font-size: 20px;
+        font-style: normal;
+      }
+      aside.PortionThree {
+        font-style: italic;
+        background-color: rgb(158, 158, 158);
+      }
+      h2.new {
+        padding-top: 3%;
+        padding-left: 3%;
+      }
+      td.phone {
+        padding: 30px;
+        background-color: rgb(71, 71, 71);
+      }
+      td.message {
+        padding: 30px;
+        background-color: rgb(71, 71, 71);
+      }
+      td.location {
+        padding: 30px;
+        background-color: rgb(96, 196, 169);
+      }
+
+      form.form {
+        padding: 25px;
+      }
+
+      table.send {
+        text-align: left;
+        width: 200px;
+        padding-left: 24px;
+        th {
+          background-color: black;
+        }
+      }
+
+      aside.PortionFour {
+        background-color: rgb(64, 64, 64);
+      }
+
+      aside.NewPortion {
+        color: white;
+        padding-left: 15px;
+        background-color: rgb(108, 108, 108);
+        float: left;
+      }
+      aside.NewPortionTwo {
+        padding-bottom: 30.5px;
+        color: white;
+        padding-left: 15px;
+        background-color: rgb(108, 108, 108);
+        float: left;
+      }
+      aside.NewPortionThree {
+        color: white;
+        padding-left: 15px;
+        background-color: rgb(108, 108, 108);
+        float: left;
+      }
+      aside.sideone {
+        color: white;
+        padding-left: 2px;
+        background-color: rgb(108, 108, 108);
+        float: left;
+      }
+      aside.sidetwo {
+        font-size: 14px;
+        color: white;
+        padding-left: 10px;
+        background-color: rgb(108, 108, 108);
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <aside class="Portion">
+      <img
+        class="profile"
+        width="150px"
+        height="150px"
+        src="./profile.jpeg"
+        alt="profile"
+      />
+      <p class="text">Portfolio</p>
+
+      <table class="portfolio" style="border-spacing: 2px">
+        <th>
+          <img width="10px" height="10px" src="./windows.png" alt="portfolio" />
+          PORTFOLIO
+        </th>
+      </table>
+
+      <table class="About" style="border-spacing: 2px">
+        <th>
+          <img width="10px" height="10px" src="./contact.png" alt="about" />
+          ABOUT
+        </th>
+      </table>
+
+      <table class="Contact" style="border-spacing: 2px">
+        <th>
+          <img width="10px" height="10px" src="./email.png" alt="contact" />
+          CONTACT
+        </th>
+      </table>
+
+      <section class="images">
+        <img width="16px" height="16px" src="./facebook.png" alt="facebook" />
+        <img width="16px" height="16px" src="./social.png" alt="instagram" />
+        <img width="16px" height="16px" src="./twitter.png" alt="X" />
+        <img width="16px" height="16px" src="./linkedin.png" alt="linkedin" />
+        <img width="16px" height="16px" src="./snapchat.png" alt="snapchat" />
+        <img width="16px" height="16px" src="./pinterest.png" alt="pinterest" />
+      </section>
+    </aside>
+
+    <aside class="PortionTwo">
+      <h1>My Portfolio</h1>
+
+      <table class="table1" style="width: fit-content">
+        <tr>
+          <th id="no-border">Filters:</th>
+          <th>All</th>
+          <th>
+            <img width="12px" height="12px" src="./diamond.png" alt="design" />
+            Design
+          </th>
+          <th>
+            <img width="12px" height="12px" src="./photo.png" alt="gallery" />
+            Photos
+          </th>
+          <th>
+            <img width="12px" height="12px" src="./pin.png" alt="art" />
+            Art
+          </th>
+        </tr>
+      </table>
+
+      <!--
+<div>
+    <input type="radio" name="filter" id="all" checked>
+    <label for="all">All</label>
+
+    <input type="radio" name="filter" id="design" checked>
+    <label for="design">Design</label>
+
+        <input type="radio" name="filter" id="photos" checked>
+    <label for="photos">Photos</label>
+
+        <input type="radio" name="filter" id="art" checked>
+    <label for="art">Art</label>
+</div>
+-->
+
+      <hr />
+      <table class="table2" style="border-spacing: 13px">
+        <tr>
+          <td>
+            <img src="./land.jpg" width="280px" height="180px" alt="image 1" />
+            <h3>Landscape</h3>
+            <pre>Lorem ipsum dolor sit, amet consectetur<br>adipisicing elit. Optio deleniti quam<br>iste porro saepe, error officiis harum<br>veniam tempora, quaerat rerum quis<br>consequuntur illum expedita ex dolore<br>aliquid.</pre>
+          </td>
+          <td>
+            <img
+              src="./mountain.jpg"
+              width="280px"
+              height="180px"
+              alt="image 2"
+            />
+            <h3>Mountains</h3>
+            <pre>Lorem ipsum dolor sit, amet consectetur<br>adipisicing elit. Optio deleniti quam<br>iste porro saepe, error officiis harum<br>veniam tempora, quaerat rerum quis<br>consequuntur illum expedita ex dolore<br>aliquid.</pre>
+          </td>
+          <td>
+            <img src="./shore.jpg" width="280px" height="180px" alt="image 3" />
+            <h3>Shore</h3>
+            <pre>Lorem ipsum dolor sit, amet consectetur<br>adipisicing elit. Optio deleniti quam<br>iste porro saepe, error officiis harum<br>veniam tempora, quaerat rerum quis<br>consequuntur illum expedita ex dolore<br>aliquid.</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="./Dusk.jpg" width="280px" height="180px" alt="image 4" />
+            <h3>Dusk</h3>
+            <pre>Lorem ipsum dolor sit, amet consectetur<br>adipisicing elit. Optio deleniti quam<br>iste porro saepe, error officiis harum<br>veniam tempora, quaerat rerum quis<br>consequuntur illum expedita ex dolore<br>aliquid.</pre>
+          </td>
+          <td>
+            <img src="./Lake.jpg" width="280px" height="180px" alt="image 5" />
+            <h3>Lake</h3>
+            <pre>Lorem ipsum dolor sit, amet consectetur<br>adipisicing elit. Optio deleniti quam<br>iste porro saepe, error officiis harum<br>veniam tempora, quaerat rerum quis<br>consequuntur illum expedita ex dolore<br>aliquid.</pre>
+          </td>
+          <td>
+            <img
+              src="./sunset.jpg"
+              width="280px"
+              height="180px"
+              alt="image 6"
+            />
+            <h3>Sunset</h3>
+            <pre>Lorem ipsum dolor sit, amet consectetur<br>adipisicing elit. Optio deleniti quam<br>iste porro saepe, error officiis harum<br>veniam tempora, quaerat rerum quis<br>consequuntur illum expedita ex dolore<br>aliquid.</pre>
+          </td>
+        </tr>
+      </table>
+
+      <table class="NextPage">
+        <th>
+          <img width="9px" height="9px" src="./left-arrow.png" alt="left" />
+        </th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>
+          <img width="9px" height="9px" src="./right-arrow.png" alt="right" />
+        </th>
+      </table>
+      <img class="Sun" width="450px" height="250px" src="./sun.jpg" alt="sun" />
+      <img
+        class="Ship"
+        width="450px"
+        height="250px"
+        src="./ship.jpg"
+        alt="ship"
+      />
+
+      <h2 class="AboutMe">About Me</h2>
+      <p class="Para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ullam
+        minus laborum explicabo aperiam quia iure, doloribus sequi ea eos <br />
+        error ut rem exercitationem nihil voluptate officia, consequatur
+        corporis deserunt fuga! Numquam atque quasi voluptatem distinctio, vitae
+        <br />
+        reprehenderit. Excepturi dicta impedit voluptates assumenda illo ex
+        quisquam ad adipisci reprehenderit tenetur?
+      </p>
+
+      <p class="heading">Technical Skills</p>
+      <p class="photo">Photography</p>
+      <table>
+        <td style="padding-bottom: 10px; padding-top: 10px" class="Bar">95%</td>
+        <td class="Empty"></td>
+      </table>
+
+      <p class="photo">Web Design</p>
+      <table>
+        <td style="padding-bottom: 10px; padding-top: 10px" class="Bar">95%</td>
+        <td class="Empty"></td>
+      </table>
+
+      <p class="photo">Photoshop</p>
+      <table>
+        <td style="padding-bottom: 10px; padding-top: 10px" class="Bar">95%</td>
+        <td class="Empty"></td>
+      </table>
+
+      <p class="charge">How much I charge</p>
+
+      <body>
+        <table class="price">
+          <tr>
+            <th class="basic">Basic</th>
+            <th class="pro">Pro</th>
+            <th class="premium">Premium</th>
+          </tr>
+          <tr>
+            <td>Web Design</td>
+            <td>Web Design</td>
+            <td>Web Design</td>
+          </tr>
+          <tr>
+            <td>Photography</td>
+            <td>Photography</td>
+            <td>Photography</td>
+          </tr>
+          <tr>
+            <td>1GB Storage</td>
+            <td>50GB Storage</td>
+            <td>Unlimited Storage</td>
+          </tr>
+          <tr>
+            <td>Mail Support</td>
+            <td>Endless Support</td>
+            <td>Endless Support</td>
+          </tr>
+          <tr>
+            <td>
+              $10 <br />
+              per month
+            </td>
+            <td>$25 <br />per month</td>
+            <td>
+              $25 <br />
+              per month
+            </td>
+          </tr>
+        </table>
+      </body>
+
+      <aside class="PortionThree">
+        <h2 class="new">Contact Me</h2>
+        <table>
+          <td class="message">
+            <img
+              width="25px"
+              height="25px"
+              src="./communication.png"
+              alt="mail"
+            />
+            <br />
+            E-mail
+          </td>
+          <td class="location">
+            <img width="25px" height="25px" src="./arrows.png" alt="place" />
+            <br />
+            Chicago, US
+          </td>
+          <td class="phone">
+            <img
+              width="25px"
+              height="25px"
+              src="./telephone.png"
+              alt="number"
+            />
+            <br />
+            23820432
+          </td>
+        </table>
+        <hr class="line" />
+
+        <form
+          class="form"
+          action=""
+          method="GET"
+          accept-charset="UTF-8"
+          autocomplete="off"
+          enctype=""
+        >
+          <label for="name">Name</label><br />
+          <input
+            style="width: 870px; height: 33px"
+            type="text"
+            placeholder=""
+            name=""
+            id="name"
+          />
+        </form>
+
+        <form
+          class="form"
+          action=""
+          method="GET"
+          accept-charset="UTF-8"
+          autocomplete="off"
+          enctype=""
+        >
+          <label for="email">Email</label><br />
+          <input
+            style="width: 870px; height: 33px"
+            type="text"
+            placeholder=""
+            name=""
+            id="email"
+          />
+        </form>
+        <form
+          class="form"
+          action=""
+          method="GET"
+          accept-charset="UTF-8"
+          autocomplete="off"
+          enctype=""
+        >
+          <label for="message">Message</label><br />
+          <input
+            style="width: 870px; height: 33px"
+            type="text"
+            placeholder=""
+            name=""
+            id="message"
+          />
+        </form>
+
+        <table class="send">
+          <th style="height: 38px; padding-left: 15px">
+            <img
+              style="padding-left: 1px; padding-right: 6px"
+              width="16px"
+              height="16px"
+              src="./icon.png"
+              alt="dm"
+            />
+            Send Message
+          </th>
+        </table>
+      </aside>
+
+      <aside class="PortionFour">
+        <aside class="NewPortion">
+          <h2 style="font-style: normal; margin-left: 20px">FOOTER</h2>
+          <p style="margin-right: 40px; margin-bottom: 65px; margin-left: 20px">
+            Lorem ipsum dolor sit amet consectetur <br />adipisicing elit.
+            Tempora nulla unde <br />
+            voluptatem.Lorem ipsum dolor sit amet <br />
+            consectetur adipisicing elit. <br />
+            Tempora nulla unde voluptatem.
+          </p>
+        </aside>
+        <aside class="NewPortionTwo">
+          <h2 style="font-style: normal; margin-left: 25px">BLOG POSTS</h2>
+          <aside class="sideone" style="margin-left: 25px">
+            <img width="50px" height="50px" src="./images.jpg" alt="last" />
+          </aside>
+
+          <aside class="sidetwo">
+            <p style="margin-right: 10px">Lorem<br />ipsum dolor sit.</p>
+          </aside>
+          <hr class="newline" />
+          <aside>
+            <img
+              style="margin-left: 28px"
+              width="50px"
+              height="50px"
+              src="./last.jpg"
+              alt="imga"
+            />
+            <aside class="sidetwo">
+              <p style="margin-right: 10px; margin-bottom: 10.5px">
+                Lorem<br />ipsum dolor sit.
+              </p>
+            </aside>
+          </aside>
+        </aside>
+
+        <aside class="NewPortionThree">
+          <h2 style="font-style: normal; margin-left: 100px">POPULAR TAGS</h2>
+          <p
+            style="margin-left: 100px; margin-bottom: 65px; margin-right: 70px"
+          >
+            Lorem ipsum dolor sit amet consectetur <br />adipisicing elit.
+            Tempora nulla unde <br />
+            voluptatem.Lorem ipsum dolor sit amet <br />
+            consectetur adipisicing elit. <br />
+            Tempora nulla unde voluptatem.
+          </p>
+        </aside>
+      </aside>
+      <p
+        style="
+          padding-bottom: 60px;
+          background-color: black;
+          color: rgb(0, 0, 0);
+        "
+      >
+        .
+      </p>
+    </aside>
+  </body>
+</html>
