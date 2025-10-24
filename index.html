@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <!-- Main div -->
+    <div class="w-full h-full">
+      <div class="relative flex w-full h-149 bg-zinc-100">
+        <div
+          class="absolute inset-0 w-60 h-140 bg-purple-100 mt-4 ml-5 rounded-xl shadow-sm"
+        >
+          <div>
+            <nav>
+              <div class="flex">
+                <h1 class="text-lg font-normal ml-4 mt-3">Menu</h1>
+                <img
+                  class="w-6 h-6 ml-35 mt-4.5"
+                  src="./images/menu.png"
+                  alt="/"
+                />
+              </div>
+
+              <!-- Search Bar -->
+              <div class="relative flex w-full h-10 items-center mt-1">
+                <img class="w-4 h-4 ml-4" src="./images/search.png" alt="" />
+                <input
+                  type="search"
+                  placeholder="Search"
+                  class="pl-4 ml-6 absolute text-sm border-collapse w-full h-full outline-none"
+                />
+              </div>
+              <!-- Search Bar ends here -->
+
+              <hr class="mt-3 opacity-5" />
+
+              <h1 class="text-xs mt-3 ml-4 font-mono">Tasks</h1>
+
+              <!-- Anchor Tags -->
+              <div
+                class="hover:bg-slate-50 w-55 h-8 mt-2 items-center rounded-lg ml-2.5"
+              >
+                <a class="flex" href="./upcoming.html">
+                  <img
+                    class="ml-4 w-3 h-3 mt-2.5"
+                    src="./images/right.png"
+                    alt=""
+                  />
+                  <p class="text-xs pl-2 mt-2">Upcoming</p>
+                </a>
+              </div>
+
+              <div
+                class="hover:bg-purple-300 bg-purple-200 w-55 h-8 rounded-lg ml-2.5 items-center"
+              >
+                <a class="flex" href="./index.html">
+                  <img
+                    class="ml-4 w-3 h-3 mt-2.5"
+                    src="./images/tasks.png"
+                    alt=""
+                  />
+                  <p class="text-xs pl-2 mt-2">Today</p>
+                </a>
+              </div>
+
+              <div
+                class="hover:bg-slate-50 w-55 h-8 rounded-lg ml-2.5 items-center"
+              >
+                <a class="flex" href="./calendar.html">
+                  <img
+                    class="ml-4 w-3 h-3 mt-2.5"
+                    src="./images/calendar.png"
+                    alt=""
+                  />
+                  <p class="text-xs pl-2 mt-2">Calendar</p>
+                </a>
+              </div>
+
+              <div
+                class="hover:bg-slate-50 w-55 h-8 rounded-lg ml-2.5 items-center"
+              >
+                <a class="flex" href="./sticky-wall.html">
+                  <img
+                    class="ml-4 w-3 h-3 mt-2.5"
+                    src="./images/sticky-note.png"
+                    alt=""
+                  />
+                  <p class="text-xs pl-2 mt-2">Sticky Wall</p>
+                </a>
+              </div>
+
+              <!-- Anchor Tags Ends here -->
+
+              <hr class="mt-3.5 opacity-5" />
+
+              <!-- Anchor Tags Part 2 -->
+
+              <h1 class="text-xs mt-3 ml-4 font-mono">Lists</h1>
+
+              <div
+                class="hover:bg-slate-50 w-55 h-8 mt-2 items-center rounded-lg ml-2.5"
+              >
+                <a class="flex" href="#">
+                  <div
+                    class="w-3 h-3 bg-red-400 rounded-sm mt-2.5 ml-4 shadow-sm"
+                  ></div>
+                  <p class="text-xs pl-2 mt-2">Personal</p>
+                </a>
+              </div>
+
+              <div
+                class="hover:bg-slate-50 w-55 h-8 rounded-lg ml-2.5 items-center"
+              >
+                <a class="flex" href="#">
+                  <div
+                    class="w-3 h-3 bg-blue-400 rounded-sm mt-2.5 ml-4 shadow-sm"
+                  ></div>
+                  <p class="text-xs pl-2 mt-2">Work</p>
+                </a>
+              </div>
+
+              <div
+                class="hover:bg-slate-50 w-55 h-8 rounded-lg ml-2.5 items-center"
+              >
+                <a class="flex" href="#">
+                  <div
+                    class="w-3 h-3 bg-yellow-300 rounded-sm mt-2.5 ml-4 shadow-sm"
+                  ></div>
+                  <p class="text-xs pl-2 mt-2">List 1</p>
+                </a>
+              </div>
+
+              <!-- Anchor tags Part 2 ends here -->
+
+              <!-- Button -->
+              <button
+                class="flex items-center rounded-sm w-full h-10 cursor-pointer"
+                type="button"
+              >
+                <img class="w-2.5 h-2.5 ml-7" src="./images/plus.png" alt="" />
+                <div class="text-xs ml-2 font-mono">Add New List</div>
+              </button>
+              <!-- Button Ends Here -->
+
+              <hr class="mt-3.5 opacity-5" />
+
+              <!-- Settings -->
+              <div class="flex mt-10 items-center cursor-pointer">
+                <img class="ml-6 w-3 h-3" src="./images/setting.png" alt="" />
+                <p class="ml-2 text-xs">Settings</p>
+              </div>
+              <div class="flex mt-1.5 items-center cursor-pointer">
+                <img class="ml-6 w-3 h-3" src="./images/logout.png" alt="" />
+                <p class="ml-2 text-xs">Sign out</p>
+              </div>
+              <!-- Settings -->
+            </nav>
+          </div>
+        </div>
+
+        <!-- Main Body -->
+
+        <div class="ml-65 w-full h-full overflow-hidden">
+          <div><h1 class="mt-5 ml-7 font-bold text-3xl">Today</h1></div>
+
+          <div class="relative">
+            <div
+              class="absolute w-243 h-119 border-1 rounded-sm ml-5 mr-5 mt-10 opacity-10"
+            ></div>
+          </div>
+          <div
+            class="row relative flex w-233 h-10 mt-15 ml-10 border-slate-200 border-1 overflow-hidden"
+          >
+            <button class="absolute w-5 h-5" onclick="addTask()">
+              <img
+                class="m-3 w-4 h-4 cursor-pointer"
+                src="./images/add.png"
+                alt=""
+              />
+            </button>
+            <input
+              id="input-box"
+              class="absolute ml-10 mt-2 w-220 text-sm font-thin border-collapse outline-none"
+              type="text"
+              placeholder="Add New Task"
+            />
+            
+          </div>
+
+          <!-- list -->
+          <div class="ml-5 w-243 h-20">
+            <ul id="list-container" class="ml-10 list-none space-y-3 overflow-hidden">
+              <!-- Tasks dynamical -->
+            </ul>
+          </div>
+          <!-- list -->
+        </div>
+        <!-- Main body ends here -->
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
