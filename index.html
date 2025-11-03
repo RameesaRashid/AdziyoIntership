@@ -3,163 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>☁️ Weather</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-
-  <!--header starts here-->
-  <body>
-    <nav
-      class="w-full h-20 items-center bg-gray-100 flex justify-between p-4 shadow-2xl"
+  <body
+    class="bg-gradient-to-br from-blue-400 to-blue-200 min-h-screen flex flex-col items-center justify-center p-6"
+  >
+    <div
+      id="weather-card"
+      class="w-200 p-10 rounded-3xl bg-gradient-to-br from-blue-200 to-blue-500 shadow-2xl"
     >
-      <div class="cursor-pointer text-3xl text-slate-700 uppercase">Kelly</div>
+      <!-- Weather data will be inserted dynamically -->
 
-      <ol class="flex">
-        <li class="cursor-pointer p-4 text-teal-400">
-          Home
-          <div class="w-7 border-b-4 rounded-lg border-teal-400"></div>
-        </li>
-
-
-        <li class="cursor-pointer p-4 hover:text-teal-400">
-          About
-        </div>
-        
-    </div>
-          <div class="hidden w-7 border-b-4 rounded-lg border-teal-400"></div>
-
-        </li>
-
-
-
-        <li class="cursor-pointer p-4 hover:text-teal-400">
-          Resume
-          <div class="hidden w-7 border-b-4 rounded-lg border-teal-400"></div>
-        </li>
-
-        <li class="cursor-pointer p-4 hover:text-teal-400">
-          Services
-          <div class="hidden w-7 border-b-4 rounded-lg border-teal-400"></div>
-        </li>
-
-        <li class="cursor-pointer p-4 hover:text-teal-400">
-          Portfolio
-          <div class="hidden w-7 border-b-4 rounded-lg border-teal-400"></div>
-        </li>
-
-        <li class="cursor-pointer p-4 hover:text-teal-400 flex hover: ">
-          Dropdown
-          <img class="w-6 h-6 hover:filter-none" src="./down.png" alt="dropdown">
-          <div class="hidden w-7 border-b-4 rounded-lg border-teal-400"></div>
-        </li>
-
-        <li class="cursor-pointer p-4 hover:text-teal-400">
-          Contact
-          <div class="hidden w-7 border-b-4 rounded-lg border-teal-400"></div>
-        </li>
-
-      </ol>
-      <div class="flex">
-        <img
-          class="cursor-pointer p-1 h-7"
-          src="./facebook.png"
-          alt="1st-logo"
+      <div class="relative flex">
+        <input
+          id="city"
+          type="text"
+          for="img"
+          placeholder="Enter city name..."
+          class="w-full mb-6 px-4 py-2 rounded-xl pl-12 text-white outline-1 outline-gray-900 bg-gradient-to-br from-gray-900 to-gray-800 shadow-2xl"
         />
         <img
-          class="cursor-pointer p-1 h-7 hover:text-green-500"
-          src="./linkedin.png"
-          alt="2nd-logo"
+          for="input"
+          class="absolute w-5 h-5 ml-3 mt-2.5 cursor-pointer"
+          src="./images/search.png"
+          alt="#"
         />
-        <img
-          class="cursor-pointer p-1 h-7 hover:text-green-500"
-          src="./social.png"
-          alt="3rd-logo"
-        />
-        <img
-          class="cursor-pointer p-1 h-7 hover:text-green-500"
-          src="./twitter.png"
-          alt="4th-logo"
-        />
-      </div>
-    </nav>
-    <!--header ends here-->
-
-    <!--Hero section starts here-->
-    <div>
-    <div class="relative">
-    <img class="h-full w-full object-cover " src="woman.jpg" alt="Random image">
-    <div class="absolute inset-0 items-center text-center">
-        <h2 class="text-black text-xl md:text-5xl font-bold pt-50">Kelly Adams</h2>
-        <p class="pt-4 text-sm md:text-xl pb-6">I'm a professional illustrator from San Francisco</p>
-        
         <button
-            class="cursor-pointer rounded-3xl shadow-xl bg-teal-400 pl-10 pr-10 pt-3 pb-3 text-sm"
-          >
-            ABOUT ME
-          </button>
-    </div>
-</div>
-</div>
-    <!--Hero section ends here-->
+          id="getWeatherBtn"
+          class="bg-gradient-to-br from-gray-600 to-black outline-1 outline-blue-300 absolute text-white ml-150.5 bg-gray-950 rounded-xl w-30 h-10 border-l-purple-50 text-xs cursor-pointer hover:bg-gradient-to-br hover:from-black hover:to-gray-600"
+        >
+          Enter
+        </button>
+        
+          <button
+          id="location"
+          class="bg-gradient-to-br from-gray-900 to-gray-500 outline-1 outline-blue-300 absolute text-white justify-center bg-gray-950 rounded-xl w-55 h-15 mt-40 ml-65 border-l-purple-50 text-xs cursor-pointer hover:bg-gradient-to-br hover:from-black hover:to-gray-600 shadow-xl transition"
+        >
+          📍 Use Current Location
+        </button>
 
-    <!--Footer section-->
-    <nav>
-      <div class="w-full h-50 bg-gray-100 shadow-2xl">
-        <p class="text-center text-sm pt-10 text-gray-600">
-          © Copyright
-          <span class="text-black font-bold pl-1 pr-1">Kelly</span> All Rights
-          Reserved
-        </p>
-        <div class="justify-center flex pt-5">
+      </div>
 
-
-          <div
-            class="justify-center flex items-center w-10 h-10 shadow-lg rounded-full border-1 bg-slate-100 cursor-pointer">
-            <img class="w-4 cursor-pointer" src="./x.png" alt="twitter" />
-          </div>
-          
-          <div class="text-gray-50">h</div>
-
-          <div
-            class="justify-center flex items-center w-10 h-10 shadow-lg rounded-full border-1 bg-slate-100 cursor-pointer"
-          >
-            <img class="w-4 cursor-pointer" src="./ig.png" alt="instagram" />
-          </div>
-
-          <div class="text-gray-50">h</div>
-
-          <div
-            class="justify-center flex items-center w-10 h-10 shadow-lg rounded-full border-1 bg-slate-100 cursor-pointer"
-          >
-            <img
-              class="w-4 cursor-pointer"
-              src="./facebookk.png"
-              alt="facebook"
-            />
-          </div>
-
-          <div class="text-gray-50">h</div>
-
-          <div
-            class="justify-center flex items-center w-10 h-10 shadow-lg rounded-full border-1 bg-slate-100 cursor-pointer"
-          >
-            <img
-              class="w-4 cursor-pointer"
-              src="./linkedin.png"
-              alt="linkedin"
-            />
-          </div>
+      <div id="weather" class="text-center space-y-3">
+        <!-- <h2 class="text-3xl font-bold text-white">City Name</h2>
+        <p class="text-white text-sm">Country Name</p>
+        <p class="text-gray-100 text-sm">Location</p>
+        <div class="relative flex items-center justify-center">
+          <p class="text-black font-semibold text-4xl">°C</p>
+          <p class="text-red-900 font-semibold text-lg mt-2.5 ml-1.5">/ °F</p>
         </div>
-        <div class="text-center pt-4 text-xs text-gray-600">
-          <p>
-            Designed by
-            <span class="text-green-600 cursor-pointer">BootstrapMade</span>
-            Distributed by
-            <span class="text-green-600 cursor-pointer">ThemeWagon</span>
-          </p>
+        <p class="text-white">Feels like:</p>
+        <p class="text-white">Weather Condition:</p>
+        <div class="flex justify-center gap-2 mt-3 text-sm text-gray-100">
+          <p>🌫️ Humidity</p>
+          <p>🌬 Wind</p> -->
         </div>
       </div>
-    </nav>
-    <!--Footer Section ends here-->
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
